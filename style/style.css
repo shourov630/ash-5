@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    margin-top: 30px;
+}
+.navbar-color{
+    background-color: rgb(249, 247, 243);
+    height: 140px;
+}
+.btn-div{
+    width:700px;
+    margin: 0 auto;
+}
+.btn {
+    width: 300px;
+} 
+.section-btn{
+    margin-top: 80px;
+}
+.main{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.main-p{
+    background-color: rgb(241, 234, 234);
+    height: 65px;
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+.img{
+    width: 640px;
+}
+.two-main{
+    width: 60%;
+    margin: 0 auto;
+}
