@@ -9,9 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="navbar-color">
+    <header class="navbar-color sticky">
         <!-- nav bar start -->
-         <div class="flex justify-around">
+         <div class="item flex justify-around">
             <!-- blog option -->
              <div class="blog rounded-2xl mt-4">
                 <button id="blog-btn" class="btn btn-success text-center text-2xl font-bold px-5  ">Blog</button>
@@ -25,7 +25,7 @@
              <!-- main amount option -->
              <div class="flex items-center">
                 <img src="assets/coin.png" alt="coin">
-                <p id="main-amount" class="text-2xl font-bold text-black px-7">50000</p>
+                <p id="main-amount" class=" text-2xl font-bold text-black px-7">50000</p>
                 <p class="text-2xl font-bold text-black px-7">BDT</p>
              </div>
              <!-- main amount option end -->
@@ -72,7 +72,7 @@
            <p class="py-4 text-5xl font-bold text-center">Successfully</p>
            <div class="modal-action">
             <!-- click -->
-           <a id="donate-click" href="#" class="btn">Yay!</a>
+           <a id="donate-click" href="#" class="btn modal-middle">Yay!</a>
            </div>
            </div>
            </div>
@@ -81,14 +81,16 @@
               </div>
 
 
-              <div class="card lg:card-side bg-base-100 shadow-xl mt-10">
+
+
+              <div class="card lg:card-side bg-base-100 shadow-xl mt-5">
                 <figure>
-                  <img class="img" src="assets/feni.png" alt="Album" />
+                  <img class="img" src="assets/quota-protest.png" alt="Album" />
                 </figure>
                 <div class="card-body">
                   <div class="main-p rounded-xl">
                     <img class="w-10 h-10 pr-2 pl-2" src="assets/coin.png" alt="coin">
-                    <p class="text-2xl font-bold">5000</p>
+                    <p id="ready-money" class="text-2xl font-bold">5000</p>
                     <p class="text-2xl font-bold">BDT</p>
                   </div>
                   <p class="text-4xl font-bold">Donate for Flood at Noakhali, Bangladesh</p>
@@ -98,7 +100,7 @@
 
                     <!-- The button to open modal -->
                      <!-- donaye click btn start -->
-            <a id="donate-click-two" href="#my_modal_8" class="btn btn-outline btn-success text-3xl font-bold">Donate Now</a>
+            <a id="donate-click" href="#my_modal_8" class=" btn btn-outline btn-success text-3xl font-bold">Donate Now</a>
             <!-- donaye click btn start -->
 
               <!-- Put this part before </body> tag -->
@@ -110,7 +112,7 @@
            <p class="py-4 text-5xl font-bold text-center">Successfully</p>
            <div class="modal-action">
             <!-- click -->
-           <a id="donate-click" href="#" class="btn">Yay!</a>
+           <a id="donate-click" href="#" class="btn modal-middle">Yay!</a>
            </div>
            </div>
            </div>
@@ -120,24 +122,26 @@
 
 
 
-              <div class="card lg:card-side bg-base-100 shadow-xl mt-10">
+
+
+              <div class="card lg:card-side bg-base-100 shadow-xl mt-5">
                 <figure>
-                  <img class="img" src="assets/quota-protest.png" alt="Album" />
+                  <img class="img" src="assets/feni.png" alt="Album" />
                 </figure>
                 <div class="card-body">
                   <div class="main-p rounded-xl">
                     <img class="w-10 h-10 pr-2 pl-2" src="assets/coin.png" alt="coin">
-                    <p class="text-2xl font-bold">5000</p>
+                    <p id="ready-money" class="text-2xl font-bold">5000</p>
                     <p class="text-2xl font-bold">BDT</p>
                   </div>
                   <p class="text-4xl font-bold">Donate for Flood at Noakhali, Bangladesh</p>
                   <p class="text-2xl font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster.</p>
-                  <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+                  <input id="input-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
                   <div class="card-actions justify-end">
 
                     <!-- The button to open modal -->
                      <!-- donaye click btn start -->
-            <a id="donate-click" href="#my_modal_8" class="btn btn-outline btn-success text-3xl font-bold">Donate Now</a>
+            <a id="donate-click" href="#my_modal_8" class=" btn btn-outline btn-success text-3xl font-bold">Donate Now</a>
             <!-- donaye click btn start -->
 
               <!-- Put this part before </body> tag -->
@@ -149,7 +153,7 @@
            <p class="py-4 text-5xl font-bold text-center">Successfully</p>
            <div class="modal-action">
             <!-- click -->
-           <a id="donate-click" href="#" class="btn">Yay!</a>
+           <a id="donate-click" href="#" class="btn modal-middle">Yay!</a>
            </div>
            </div>
            </div>
@@ -159,32 +163,16 @@
 
 
 
-        </section>
-        <!-- body main part end -->
 
-        <!-- blog section start -->
-        <section class="hidden">
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
+            
+
+
+
+
+
+              
+
+
         </section>
     </main>
 

@@ -5,15 +5,14 @@ const readyMoney = document.getElementById('ready-money').innerText;
 // const inputBlance = document.getElementById('input-amount').value;
 const blogBtn = document.getElementById('blog-btn');
 
-
 donate.addEventListener('click',function(event){
     event.preventDefault();
     const inputBlance = document.getElementById('input-amount').value;
     const mainBlance = parseFloat(blance);
     const inputAmount = parseFloat(inputBlance);
     const updateReadyMoney = parseFloat(readyMoney);
-    if(mainBlance < inputAmount || inputAmount <= 0){
-        alert('type correct amount');
+    if(mainBlance < inputAmount || inputAmount <= 0 || isNaN(inputAmount)){
+        alert('Invalid Donation Amount');
         return;
     }
     const newBlance = mainBlance - inputAmount;
