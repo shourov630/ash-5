@@ -29,7 +29,7 @@ const donation = document.getElementById('btn-don');
 historyBtn.addEventListener('click',function(){
     cardSec.classList.add('hidden');
     historySec.classList.remove('hidden');
-
+    blogSec.classList.add('hidden');
 
 })
 donation.addEventListener('click',function(){
