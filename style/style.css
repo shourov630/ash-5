@@ -8,7 +8,6 @@
 .navbar-color{
     background-color: rgb(249, 247, 243);
     height: 140px;
-    position: sticky;
 }
 .btn-div{
     width:700px;
@@ -39,3 +38,4 @@
     width: 60%;
     margin: 0 auto;
 }
+
