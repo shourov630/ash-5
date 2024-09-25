@@ -3,7 +3,7 @@ const donate = document.getElementById('donate-click')
 const historyBtn = document.getElementById('btn-his');
 const readyMoney = document.getElementById('ready-money').innerText;
 // const inputBlance = document.getElementById('input-amount').value;
-const blogBtn = document.getElementById('blog-btn');
+// const blogBtn = document.getElementById('blog-btn');
 
 donate.addEventListener('click',function(event){
     event.preventDefault();
@@ -48,3 +48,17 @@ historyItem.innerHTML = `
 `;
 const historyContainer = document.getElementById('history-list');
 historyContainer.insertBefore(historyItem , historyContainer.firstChild);
+
+
+// blog option
+const blogBtn = document.getElementById('blog-btn');
+const blogSec = document.getElementById('blog');
+blogBtn.addEventListener('click',function(){
+    cardSec.classList.add('hidden');
+    blogSec.classList.remove('hidden');
+})
+const home = document.getElementById('home-btn');
+home.addEventListener('click',function(){
+    blogSec.classList.add('hidden');
+    cardSec.classList.remove('hidden');
+})
