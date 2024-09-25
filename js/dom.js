@@ -56,6 +56,7 @@ const blogSec = document.getElementById('blog');
 blogBtn.addEventListener('click',function(){
     cardSec.classList.add('hidden');
     blogSec.classList.remove('hidden');
+    historySec.classList.add('hidden');
 })
 const home = document.getElementById('home-btn');
 home.addEventListener('click',function(){
