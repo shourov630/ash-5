@@ -20,3 +20,31 @@ donate.addEventListener('click',function(event){
     const newReadyMoney = updateReadyMoney + inputAmount;
     document.getElementById('ready-money').innerText = newReadyMoney;
 })
+
+
+const historySec = document.getElementById('history');
+const cardSec = document.getElementById('card');
+const donation = document.getElementById('btn-don');
+
+historyBtn.addEventListener('click',function(){
+    cardSec.classList.add('hidden');
+    historySec.classList.remove('hidden');
+
+
+})
+donation.addEventListener('click',function(){
+    historySec.classList.add('hidden');
+    cardSec.classList.remove('hidden');
+})
+
+
+const inputBlance = document.getElementById('input-amount').value;
+const inputAmount = parseFloat(inputBlance);
+const historyItem = document.createElement('div');
+historyItem.className = 'bg-white p-3 rounded-md border-l-2 border-indigo-500';
+historyItem.innerHTML = `
+    <p class=" text-5xl font-bold">Donate : ${inputAmount.toFixed}</p>
+    <p class=" text-4xl font-bold">Thank You For Donate</p>
+`;
+const historyContainer = document.getElementById('history-list');
+historyContainer.insertBefore(historyItem , historyContainer.firstChild);
